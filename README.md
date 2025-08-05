@@ -9,7 +9,7 @@ Whether you're looking to personalize your in-game UI or create your own theme, 
 ## 📁 Installation
 (This theme/instalation is only for the custom animation login screen I will be working on full theme support in the future)
 1. **Install PokéMMO via the PokeMMO GitHub page**  
-   Follow the instructions at the [PokéMMO port](https://github.com/PortMaster-Ports/PokeMMO) to set up PokéMMO.
+   Follow the instructions at the [PokéMMO port](https://github.com/lowlevel-1989/pokemmo-port) to set up PokéMMO.
 
 2. **Download or Clone this Repository**
    ```bash
@@ -63,7 +63,7 @@ I haven't tested full theme's yet, I will be working on it.
 
 - **PokéMMO** – All game assets, client, and content belong to the developers at [https://pokemmo.eu](https://pokemmo.eu). This project is not affiliated with or endorsed by PokéMMO.
 - **Portmaster** – Thanks to the [Portmaster](https://github.com/PortMaster/PortMaster) project for making it possible to run PokéMMO on various platforms.
-- **PokéMMO GitHub Port** – Special thanks to the community-maintained [PokéMMO port](https://github.com/PortMaster-Ports/PokeMMO) for enabling compatibility through Portmaster.
+- **PokéMMO GitHub Port** – Special thanks to the community-maintained [PokéMMO port](https://github.com/lowlevel-1989/pokemmo-port) for enabling compatibility through Portmaster.
 
 
 
