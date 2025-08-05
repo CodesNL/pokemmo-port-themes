@@ -8,8 +8,8 @@ Whether you're looking to personalize your in-game UI or create your own theme, 
 
 ## 📁 Installation
 (This theme/instalation is only for the custom animation login screen I will be working on full theme support in the future)
-1. **Install PokéMMO via Portmaster**  
-   Follow the instructions at the [Portmaster GitHub](https://github.com/PortMaster/PortMaster) to set up PokéMMO.
+1. **Install PokéMMO via the PokeMMO GitHub page**  
+   Follow the instructions at the [PokéMMO port](https://github.com/PortMaster-Ports/PokeMMO) to set up PokéMMO.
 
 2. **Download or Clone this Repository**
    ```bash
