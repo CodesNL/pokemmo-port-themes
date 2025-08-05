@@ -18,10 +18,7 @@ Whether you're looking to personalize your in-game UI or create your own theme, 
 3. Copy the Theme Folder to PokéMMO's Port Theme Directory
 The typical path is: ~\ports\pokemmo\data\themes
 
-4. Now only copy these's items from the Default Theme Folder to: ~\ports\pokemmo\data\mods\console_mod\console
-*anim
-*login-animation.xml
-*theme.xml
+4. Now only copy these's items (anim,login-animation.xml,theme.xml) from the Default Theme Folder to: ~\ports\pokemmo\data\mods\console_mod\console
 
 5. Now go to ~\ports\pokemmo\config\main.properties
 open main.properties.txt and change the line client.ui.theme=console to client.ui.theme=default
