@@ -32,22 +32,29 @@ Now you should have a custom login animation
 
 *For the custom login theme follow these steps. 
 
-1. Convert the video you want for you login animation to PNG: https://ezgif.com/video-to-png and download as Zip.
-Its important to use ezfig.com, since the code is based on the file naming, if not you can always edit the xml file yourself.
-Make sure the video/gif you convert to PNG is the same size as your device, for the RG35XXSP it's 640x480.
+1. Go to [ezgif.com](https://ezgif.com/video-to-png) and upload the video you want to use as your login animation.
 
-3. Go to your Theme folder Default, and place the images in the folder 'anim' depending on how many images you have, you would need to edit both theme.xml and login-animation.xml
+2. Convert the video to PNG frames and download the output as a `.zip` file.
+
+> ⚠️ **Important:**  
+> Please use **ezgif.com** specifically, as the code relies on the file naming convention it generates.  
+> If you use a different tool, you may need to manually rename the files or edit the XML configuration yourself.
+
+3. Make sure the video or GIF you convert is the same resolution as your device.  
+   For the **RG35XXSP**, the required resolution is **640x480**.
+
+4. Go to your Theme folder Default, and place the images in the folder 'anim' depending on how many images you have, you would need to edit both theme.xml and login-animation.xml
 (Don't forget you need to do this for both the Data/Theme folder and the Mod Console folder)
 
-4. Make sure to have this one line in both the Theme.xml files 
+5. Make sure to have this one line in both the Theme.xml files.
 <img width="606" height="693" alt="image" src="https://github.com/user-attachments/assets/e5984cd8-2177-4c08-9a52-c9cf95b2c03e" />
 
-5. In the login-animation.xml make sure the code goes to the amount of images you have, so in this instance 145 images.
+6. In the login-animation.xml make sure the code goes to the amount of images you have, so in this instance 145 images.
 <images file="anim/ezgif-frame-145.png" filter="nearest">
 <area name="bg-f00145" xywh="*"/>
 <img width="1362" height="958" alt="image" src="https://github.com/user-attachments/assets/19ecc460-5919-40a8-943b-fc470e0edbe7" />
 
-6. Do the same for the duration code.
+7. Do the same for the duration code.
 <frame ref="bg-f00145" duration="50"/>
 <img width="1030" height="944" alt="image" src="https://github.com/user-attachments/assets/7fd9f5f8-d8f7-4d15-b404-cf5a21c45c17" />
 
