@@ -24,7 +24,7 @@ git clone https://github.com/yourusername/pokemmo-themes-portmaster.git
 
 ### 4. Apply the Login Animation Files
 - From the `Default` folder, copy these files:
-  - `anim/`
+  - `anim`
   - `login-animation.xml`
   - `theme.xml`
 
