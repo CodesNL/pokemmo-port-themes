@@ -1,71 +1,115 @@
 # PokéMMO Custom Themes (Portmaster Edition)
 
-Welcome to the official repository for custom **PokéMMO themes** built specifically for the **PokéMMO port running via [Portmaster](https://github.com/PortMaster/PortMaster)**.
+Welcome to the official repository for **custom PokéMMO themes**, specifically built for the **PokéMMO port running via [Portmaster](https://github.com/PortMaster/PortMaster)**.
 
-Whether you're looking to personalize your in-game UI or create your own theme, this repo provides ready-to-use themes and a base to build from.
+Whether you want to personalize your in-game UI or create your own custom login animation, this repo provides ready-to-use assets and a foundation to build upon.
 
 ---
 
-## 📁 Installation
-(This theme/instalation is only for the custom animation login screen I will be working on full theme support in the future)
-1. **Install PokéMMO via the PokeMMO GitHub page**  
-   Follow the instructions at the [PokéMMO port](https://github.com/lowlevel-1989/pokemmo-port) to set up PokéMMO.
+## 📁 Installation Guide
 
-2. **Download or Clone this Repository**
-   ```bash
-   git clone https://github.com/yourusername/pokemmo-themes-portmaster.git
+> ⚠️ **Note:** This setup currently supports **custom login screen animations only**. Full theme support is in development.
 
-3. Copy the Theme Folder to PokéMMO's Port Theme Directory
-The typical path is: ~\ports\pokemmo\data\themes
+### 1. Install PokéMMO via GitHub  
+Follow the instructions on the official [PokéMMO port](https://github.com/lowlevel-1989/pokemmo-port) to install the game.
 
-4. Now only copy these's files (anim,login-animation.xml,theme.xml) from the Default Theme Folder to: ~\ports\pokemmo\data\mods\console_mod\console
+### 2. Clone or Download This Repository
+```bash
+git clone https://github.com/yourusername/pokemmo-themes-portmaster.git
+```
 
-5. Now go to ~\ports\pokemmo\config\main.properties
-open main.properties.txt and change the line client.ui.theme=console to client.ui.theme=default
-save and exit.
+### 3. Copy Theme Files
+- Copy the `Default` theme folder to:  
+  `~/ports/pokemmo/data/themes`
 
-Now you should have a custom login animation 
-<img width="3024" height="4032" alt="image" src="https://github.com/user-attachments/assets/8728a76c-b397-4bf6-bf99-799ecfec45bb" />
+### 4. Apply the Login Animation Files
+- From the `Default` folder, copy these files:
+  - `anim/`
+  - `login-animation.xml`
+  - `theme.xml`
 
+  To:  
+  `~/ports/pokemmo/data/mods/console_mod/console`
 
-## Creating Your Own Theme/Login Animation
+### 5. Update Config
+- Open the file:  
+  `~/ports/pokemmo/config/main.properties`
+- Change this line:
+  ```
+  client.ui.theme=console
+  ```
+  To:
+  ```
+  client.ui.theme=default
+  ```
+- Save and close the file.
 
-*For the custom login theme follow these steps. 
+✅ You should now see your custom login animation when launching the game!
 
-1. Go to [ezgif.com](https://ezgif.com/video-to-png) and upload the video you want to use as your login animation.
+![Login Animation Preview](https://github.com/user-attachments/assets/8728a76c-b397-4bf6-bf99-799ecfec45bb)
 
-2. Convert the video to PNG frames and download the output as a `.zip` file.
+---
+
+## 🎨 Creating Your Own Login Animation
+
+Follow these steps to create a custom login animation using your own video or GIF.
+
+### 1. Convert Video to Frames
+- Go to [ezgif.com](https://ezgif.com/video-to-png)
+- Upload your video or GIF.
+- Convert it to PNG frames.
+- Download the result as a `.zip` file.
 
 > ⚠️ **Important:**  
-> Please use **ezgif.com** specifically, as the code relies on the file naming convention it generates.  
-> If you use a different tool, you may need to manually rename the files or edit the XML configuration yourself.
+> Use **ezgif.com** specifically, as the XML animation relies on its naming format.  
+> Using another tool may require renaming files or editing the XML manually.
 
-3. Make sure the video or GIF you convert is the same resolution as your device.  
-   For the **RG35XXSP**, the required resolution is **640x480**.
+### 2. Ensure Correct Resolution
+- The animation should match your device's resolution.  
+  For the **RG35XXSP**, use **640x480**.
 
-4. Go to your Theme folder Default, and place the images in the folder 'anim' depending on how many images you have, you would need to edit both theme.xml and login-animation.xml
-(Don't forget you need to do this for both the Data/Theme folder and the Mod Console folder)
+### 3. Add Frames to Your Theme
+- Extract the PNG frames into the `anim/` folder inside your theme (both in `data/themes` and `mods/console_mod/console`).
+- Update both `theme.xml` and `login-animation.xml` to reflect your image count.
 
-5. Make sure to have this one line in both the Theme.xml files.
-<img width="606" height="693" alt="image" src="https://github.com/user-attachments/assets/e5984cd8-2177-4c08-9a52-c9cf95b2c03e" />
+### 4. Add This Line to Both `theme.xml` Files
+Make sure this line is included in both copies of `theme.xml`:
 
-6. In the login-animation.xml make sure the code goes to the amount of images you have, so in this instance 145 images.
+![XML Theme Line](https://github.com/user-attachments/assets/e5984cd8-2177-4c08-9a52-c9cf95b2c03e)
+
+### 5. Update `login-animation.xml`
+
+For example, if you have 145 images, add this to the XML:
+```xml
 <images file="anim/ezgif-frame-145.png" filter="nearest">
-<area name="bg-f00145" xywh="*"/>
-<img width="1362" height="958" alt="image" src="https://github.com/user-attachments/assets/19ecc460-5919-40a8-943b-fc470e0edbe7" />
+  <area name="bg-f00145" xywh="*"/>
+</images>
+```
+![XML Image Example](https://github.com/user-attachments/assets/19ecc460-5919-40a8-943b-fc470e0edbe7)
 
-7. Do the same for the duration code.
+Also, update the frame duration section accordingly:
+```xml
 <frame ref="bg-f00145" duration="50"/>
-<img width="1030" height="944" alt="image" src="https://github.com/user-attachments/assets/7fd9f5f8-d8f7-4d15-b404-cf5a21c45c17" />
+```
+![Frame Duration Example](https://github.com/user-attachments/assets/7fd9f5f8-d8f7-4d15-b404-cf5a21c45c17)
 
+---
 
-## Custom Themes
-As for custom theme's you can try to copy the Theme folder to ~\ports\pokemmo\data\themes and ~\ports\pokemmo\data\mods\console_mod\console.
-I haven't tested full theme's yet, I will be working on it.
+## ⚙️ Custom Theme Support (WIP)
 
+Full UI theming is currently **experimental**.
+
+You can try placing your custom `Theme` folder in both:
+- `~/ports/pokemmo/data/themes`
+- `~/ports/pokemmo/data/mods/console_mod/console`
+
+This may allow some customization, but full support is not guaranteed yet. Stay tuned for future updates.
+
+---
 
 ## 🙌 Credits
 
-- **PokéMMO** – All game assets, client, and content belong to the developers at [https://pokemmo.eu](https://pokemmo.eu). This project is not affiliated with or endorsed by PokéMMO.
-- **Portmaster** – Thanks to the [Portmaster](https://github.com/PortMaster/PortMaster) project for making it possible to run PokéMMO on various platforms.
-- **PokéMMO GitHub Port** – Special thanks to the community-maintained [PokéMMO port](https://github.com/lowlevel-1989/pokemmo-port) for enabling compatibility through Portmaster.
+- **PokéMMO** – All game assets, client files, and intellectual property belong to [pokemmo.eu](https://pokemmo.eu).  
+  This is a **fan-made project** and is not affiliated with or endorsed by PokéMMO.
+- **Portmaster** – Huge thanks to the [Portmaster](https://github.com/PortMaster/PortMaster) team for enabling PokéMMO on various platforms.
+- **PokéMMO GitHub Port** – Special thanks to the [community-maintained port](https://github.com/lowlevel-1989/pokemmo-port) for making this project possible.
