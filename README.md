@@ -44,13 +44,13 @@ git clone https://github.com/yourusername/pokemmo-themes-portmaster.git
   ```
 - Save and close the file.
 
-✅ You should now see your custom login animation when launching the game!
+You should now see your custom login animation when launching the game!
 
 ![Login Animation Preview](https://github.com/user-attachments/assets/8728a76c-b397-4bf6-bf99-799ecfec45bb)
 
 ---
 
-## 🎨 Creating Your Own Login Animation
+## Creating Your Own Login Animation
 
 Follow these steps to create a custom login animation using your own video or GIF.
 
@@ -95,7 +95,7 @@ Also, update the frame duration section accordingly:
 
 ---
 
-## ⚙️ Custom Theme Support (WIP)
+## Custom Theme Support (WIP)
 
 Full UI theming is currently **experimental**.
 
@@ -107,7 +107,7 @@ This may allow some customization, but full support is not guaranteed yet. Stay 
 
 ---
 
-## 🙌 Credits
+## Credits
 
 - **PokéMMO** – All game assets, client files, and intellectual property belong to [pokemmo.eu](https://pokemmo.eu).  
   This is a **fan-made project** and is not affiliated with or endorsed by PokéMMO.
