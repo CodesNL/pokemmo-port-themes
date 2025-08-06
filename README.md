@@ -33,8 +33,8 @@ Now you should have a custom login animation
 *For the custom login theme follow these steps. 
 
 1. Convert the video you want for you login animation to PNG: https://ezgif.com/video-to-png
-(Important to use ezfig.com, since the code is based on the file naming, if not you can always edit the xml file yourself)
-(Make sure the video you convert to PNG is the same size as your device, for the RG35XXSP it's 640x480)
+Important to use ezfig.com, since the code is based on the file naming, if not you can always edit the xml file yourself.
+Make sure the video you convert to PNG is the same size as your device, for the RG35XXSP it's 640x480.
 
 3. Go to your Theme folder Default, and place the images in the folder 'anim' depending on how many images you have, you would need to edit both theme.xml and login-animation.xml
 (Don't forget you need to do this for both the Data/Theme folder and the Mod Console folder)
