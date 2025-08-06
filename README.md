@@ -109,7 +109,6 @@ This may allow some customization, but full support is not guaranteed yet. Stay 
 
 ## Credits
 
-- **PokéMMO** – All game assets, client files, and intellectual property belong to [pokemmo.eu](https://pokemmo.eu).  
-  This is a **fan-made project** and is not affiliated with or endorsed by PokéMMO.
+- **PokéMMO** – All game assets, client files, and intellectual property belong to [pokemmo.eu](https://pokemmo.eu).
 - **Portmaster** – Huge thanks to the [Portmaster](https://github.com/PortMaster/PortMaster) team for enabling PokéMMO on various platforms.
 - **PokéMMO GitHub Port** – Special thanks to the [community-maintained port](https://github.com/lowlevel-1989/pokemmo-port) for making this project possible.
