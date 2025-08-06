@@ -14,35 +14,16 @@ Whether you want to personalize your in-game UI or create your own custom login 
 Follow the instructions on the official [PokéMMO port](https://github.com/lowlevel-1989/pokemmo-port) to install the game.
 
 ### 2. Clone or Download This Repository
+
+[Download theme main.zip](https://github.com/CodesNL/pokemmo-port-themes/archive/refs/heads/main.zip)
+
 ```bash
-git clone https://github.com/yourusername/pokemmo-themes-portmaster.git
+git clone https://github.com/CodesNL/pokemmo-themes-portmaster.git
 ```
 
 ### 3. Copy Theme Files
-- Copy the `Default` theme folder to:  
-  `~/ports/pokemmo/data/themes`
-
-### 4. Apply the Login Animation Files
-- From the `Default` folder, copy these files:
-  - `anim`
-  - `login-animation.xml`
-  - `theme.xml`
-
-  To:  
-  `~/ports/pokemmo/data/mods/console_mod/console`
-
-### 5. Update Config
-- Open the file:  
-  `~/ports/pokemmo/config/main.properties`
-- Change this line:
-  ```
-  client.ui.theme=console
-  ```
-  To:
-  ```
-  client.ui.theme=default
-  ```
-- Save and close the file.
+- Copy the `console_mod` theme folder to:  
+  `~/roms/ports/pokemmo/data/mods`
 
 You should now see your custom login animation when launching the game!
 
